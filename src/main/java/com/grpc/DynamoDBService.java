@@ -15,7 +15,7 @@ public class DynamoDBService implements DynamoDBGrpc.AsyncService {
     @Override
     public void put(io.grpc.examples.dynamodb.KeyValue request,
                     io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
-        store.put(request.getKey(), request.getValue(), true);
+        store.put(request.getKey(), request.getValue(), false);
         responseObserver.onNext(Empty.getDefaultInstance());
         responseObserver.onCompleted();
     }

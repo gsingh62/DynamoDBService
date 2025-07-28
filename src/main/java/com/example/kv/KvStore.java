@@ -20,6 +20,8 @@ public class KvStore {
     @Value("${kv.peers:}")
     private String[] peers;
 
+    public KvStore() {}
+
     @PostConstruct
     public void init() {
         File file = new File(storageDir, "kv.json");

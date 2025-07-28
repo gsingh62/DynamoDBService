@@ -2,6 +2,7 @@
 /Users/gayatrisingh/Desktop/kubernetes-service/kubernetes-service/target/generated-sources/protobuf/java/io/grpc/examples/dynamodb/KeyValue.java
 /Users/gayatrisingh/Desktop/kubernetes-service/kubernetes-service/src/main/java/com/example/kv/PeerReplicator.java
 /Users/gayatrisingh/Desktop/kubernetes-service/kubernetes-service/target/generated-sources/protobuf/java/io/grpc/examples/dynamodb/KeyOrBuilder.java
+/Users/gayatrisingh/Desktop/kubernetes-service/kubernetes-service/src/main/java/com/grpc/DynamoDBServer.java
 /Users/gayatrisingh/Desktop/kubernetes-service/kubernetes-service/src/main/java/com/example/kv/KvApplication.java
 /Users/gayatrisingh/Desktop/kubernetes-service/kubernetes-service/target/generated-sources/protobuf/java/io/grpc/examples/dynamodb/Value.java
 /Users/gayatrisingh/Desktop/kubernetes-service/kubernetes-service/src/main/java/com/example/kv/KvController.java

@@ -1,4 +1,3 @@
-com/grpc/DynamoDBService$DynamoDB.class
 io/grpc/examples/dynamodb/DynamoDBGrpc$DynamoDBBaseDescriptorSupplier.class
 io/grpc/examples/dynamodb/DynamoDBGrpc$3.class
 com/grpc/DynamoDBService.class
@@ -17,6 +16,7 @@ io/grpc/examples/dynamodb/DynamoDBGrpc$DynamoDBFileDescriptorSupplier.class
 io/grpc/examples/dynamodb/DynamoDBGrpc$DynamoDBBlockingStub.class
 io/grpc/examples/dynamodb/KeyValue.class
 io/grpc/examples/dynamodb/Key$Builder.class
+com/grpc/DynamoDBServer.class
 io/grpc/examples/dynamodb/DynamoDBGrpc$2.class
 io/grpc/examples/dynamodb/DynamoDBGrpc.class
 com/example/kv/KvStore.class
