@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: kv-store
+spec:
+  serviceName: kv-store
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kv-store
+  template:
+    metadata:
+      labels:
+        app: kv-store
+    spec:
+      containers:
+      - name: kv
+        image: kv-store:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+        env:
+        - name: kv.peers
+          value: "http://kv-store-0.kv-store:8080,http://kv-store-1.kv-store:8080,http://kv-store-2.kv-store:8080"
+        - name: kv.storage.dir
+          value: "/data"
+        volumeMounts:
+        - name: data
+          mountPath: /data
+      volumes:
+      - name: data
+        hostPath:
+          path: /Users/gayatrisingh/minikube-volumes/kv-store
+          type: DirectoryOrCreate

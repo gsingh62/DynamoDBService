@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.dynamodb";
+option java_outer_classname = "DynamoDBProto";
+option objc_class_prefix = "DDB";
+
+import "google/protobuf/empty.proto";
+
+package dynamodb;
+
+service DynamoDB {
+  rpc put(KeyValue) returns (google.protobuf.Empty) {}
+  rpc get(Key) returns (Value) {}
+}
+
+message KeyValue {
+  string key = 1;
+  string value = 2;
+}
+
+message Key {
+  string key = 1;
+}
+
+message Value {
+  string value = 1;
+}
